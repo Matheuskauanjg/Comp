@@ -11,18 +11,18 @@ const Counter = () => {
   });
 
   useEffect(() => {
-    const startDate = new Date(2023, 11, 20); // 20 de dezembro de 2023
+    const startDate = new Date(2023, 11, 20); // colocar a data
     const updateCounter = () => {
       const now = new Date();
-      const diffTime = now - startDate; // Diferença em milissegundos
+      const diffTime = now - startDate; 
 
       const seconds = Math.floor(diffTime / 1000);
       const minutes = Math.floor(seconds / 60);
       const hours = Math.floor(minutes / 60);
       const days = Math.floor(hours / 24);
       const years = Math.floor(days / 365);
-      const months = Math.floor((days % 365) / 30); // O restante dos dias viram meses
-      const remainingDays = (days % 365) % 30; // O restante dos meses viram dias
+      const months = Math.floor((days % 365) / 30); 
+      const remainingDays = (days % 365) % 30; 
 
       setTimeElapsed({
         years,

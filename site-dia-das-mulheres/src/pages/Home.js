@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Counter from "../components/Counter";
 import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
-import Hearts from "../components/Hearts"; // Importar os corações
+import Hearts from "../components/Hearts"; 
 
 const Home = () => {
   return (
